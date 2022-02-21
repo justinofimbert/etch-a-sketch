@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+#panel {
+  background-color: aquamarine;
+  padding: 6px 12px;
+}
+
+#title {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 36px;
+  padding: 0;
+}
+
+#game {
+  display: flex;
+  flex: auto;
+}
+
+#column {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.square {
+  flex: 1;
+  background-color: white;
+}
+
+.change {
+  background-color: black;
+}
