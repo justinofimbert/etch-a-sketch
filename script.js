@@ -1,4 +1,4 @@
-function changeColor(e) {
+function setBlack(e) {
   e.target.style.backgroundColor = "black";
 }
 
@@ -16,4 +16,8 @@ for (let rowNumber = 1; rowNumber < 17; rowNumber++) {
 }
 
 const squares = Array.from(document.querySelectorAll(".square"));
-squares.forEach(square => square.addEventListener("mouseenter", changeColor));
+squares.forEach(square => square.addEventListener("mouseenter", setBlack));
+
+const clearButton = document.querySelector("#clear-button");
+console.log(clearButton)
+clearButton.addEventListener("click", () => squares.forEach(square => square.style.backgroundColor = "white"));
