@@ -20,6 +20,9 @@ function createGrid(gridSize, firstGrid = false) {
   }
   const squares = Array.from(document.querySelectorAll(".square"));
   squares.forEach(square => square.addEventListener("mouseenter", setBlack));
+  
+  const clearButton = document.querySelector("#clear-button");
+  clearButton.addEventListener("click", () => squares.forEach(square => square.style.backgroundColor = "white"));
 }
 const bigContainer = document.querySelector("#column");
 
@@ -27,8 +30,6 @@ createGrid(16, true)
 
 const squares = Array.from(document.querySelectorAll(".square"));
 
-const clearButton = document.querySelector("#clear-button");
-clearButton.addEventListener("click", () => squares.forEach(square => square.style.backgroundColor = "white"));
 
 const sizeButtons = Array.from(document.querySelectorAll("#buttons button"));
 sizeButtons.forEach(button => button.addEventListener("click", () => {
