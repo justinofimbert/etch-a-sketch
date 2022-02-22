@@ -1,5 +1,5 @@
 1. add an erase button to the page (done)
-2. add an option to change the size of the grid(with a reasonable hard limit)
-3. make a rainbow brush that for each pass, gets darker until at the 10th pass, it is totally black
+2. add an option to change the size of the grid(with a reasonable hard limit) (done)
+3. make a rainbow brush that for each pass, gets darker and at the 10th pass, it is totally black
 5. make a button to toggle grid lines
 4. make it look good
