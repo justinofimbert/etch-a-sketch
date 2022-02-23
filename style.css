@@ -7,14 +7,53 @@ body {
 }
 
 #panel {
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: aqua;
   padding: 6px 12px;
+  width: 250px;
 }
 
 #title {
   font-family: 'Architects Daughter', cursive;
+  padding-left: 20px;
+  color: black;
   font-size: 36px;
   padding: 0;
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: aqua;
+  border: 4px blue solid;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#size-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#size-text {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#size-buttons {
+  display: flex;
+  width: 100%;
+  gap: 4px;
+  flex-flow: wrap;
+}
+
+#size-buttons button {
+  flex-grow: 1;
+  width: 48%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .active {
