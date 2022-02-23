@@ -1,5 +1,12 @@
-function setBlack(e) {
-  e.target.style.backgroundColor = "black";
+function paint(e) {
+  if (!toggleRainbowButton.classList.contains("active")) {
+    e.target.style.backgroundColor = "black";
+    return;
+  }
+  const randomNumber1 = Math.floor(Math.random() * 256); 
+  const randomNumber2 = Math.floor(Math.random() * 256); 
+  const randomNumber3 = Math.floor(Math.random() * 256);
+  e.target.style.backgroundColor = `rgb(${randomNumber1}, ${randomNumber2}, ${randomNumber3})`;
 }
 
 function createGrid(gridSize, firstGrid = false) {
@@ -19,7 +26,10 @@ function createGrid(gridSize, firstGrid = false) {
     }
   }
   const squares = Array.from(document.querySelectorAll(".square"));
-  squares.forEach(square => square.addEventListener("mouseenter", setBlack));
+  squares.forEach(square => {
+    square.style.backgroundColor = "white"; 
+    square.addEventListener("mouseenter", paint);
+  });
 
   const clearButton = document.querySelector("#clear-button");
   clearButton.addEventListener("click", () => squares.forEach(square => square.style.backgroundColor = "white"));
@@ -29,8 +39,13 @@ function createGrid(gridSize, firstGrid = false) {
     squares.forEach(square => square.classList.toggle("grid-lines"));
   }
 }
+
+
 const bigContainer = document.querySelector("#column");
 const toggleGridButton = document.querySelector("#toggle-grid-lines");
+const toggleRainbowButton = document.querySelector("#toggle-rainbow");
+
+toggleRainbowButton.addEventListener("click", () => toggleRainbowButton.classList.toggle("active"));
 toggleGridButton.addEventListener("click", () => toggleGridButton.classList.toggle("active"));
 
 createGrid(16, true);
@@ -40,3 +55,4 @@ sizeButtons.forEach(button => button.addEventListener("click", () => {
   const size = parseInt(button.id);
   createGrid(size);
 }));
+
