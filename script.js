@@ -59,7 +59,6 @@ const toggleGridButton = document.querySelector("#toggle-grid-lines");
 const toggleRainbowButton = document.querySelector("#toggle-rainbow");
 const sizeButtons = Array.from(document.querySelectorAll("#size-buttons button"));
 
-
 toggleRainbowButton.addEventListener("click", () => toggleRainbowButton.classList.toggle("active"));
 toggleGridButton.addEventListener("click", () => toggleGridButton.classList.toggle("active"));
 

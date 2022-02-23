@@ -2,4 +2,10 @@
 2. add an option to change the size of the grid(with a reasonable hard limit) (done)
 3. make a rainbow brush (done)
 4. make a button to toggle grid lines (done)
-5. make it look good
+5. make it look good (kinda done)
+
+for the future:
+
+a. toggle the active class also for the size button that is active
+b. don't reset game if user selects an already active grid size
+c. make it look better
