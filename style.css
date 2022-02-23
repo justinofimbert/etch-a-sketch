@@ -17,6 +17,11 @@ body {
   padding: 0;
 }
 
+.active {
+  background-color: gray;
+  border: yellow;
+}
+
 #game {
   display: flex;
   flex: auto;
@@ -36,8 +41,13 @@ body {
 .square {
   flex: 1;
   background-color: white;
+  box-sizing: border-box;
 }
 
 .change {
   background-color: black;
+}
+
+.grid-lines {
+  border: solid 1px gray ;
 }
