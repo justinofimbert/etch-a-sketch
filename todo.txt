@@ -1,5 +1,5 @@
 1. add an erase button to the page (done)
 2. add an option to change the size of the grid(with a reasonable hard limit) (done)
 3. make a rainbow brush (done)
-5. make a button to toggle grid lines (done)
-4. make it look good
+4. make a button to toggle grid lines (done)
+5. make it look good
